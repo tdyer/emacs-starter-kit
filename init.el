@@ -75,4 +75,15 @@
 (if (file-exists-p user-specific-dir)
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 
+;; set a name that id's a user regardless of their login name
+;; my mac and *nix home dirs are not the same name, bummer.
+(setq common-user-name "tdyer")
+(setq common-user-specific-config (concat dotfiles-dir  common-user-name ".el"))
+(setq common-user-specific-dir (concat dotfiles-dir common-user-name))
+(add-to-list 'load-path common-user-specific-dir)
+
+(if (file-exists-p common-user-specific-config) (load common-user-specific-config))
+(if (file-exists-p common-user-specific-dir)
+  (mapc #'load (directory-files common-user-specific-dir nil ".*el$")))
+
 ;;; init.el ends here
