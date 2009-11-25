@@ -3,7 +3,8 @@
 (setq ansi-color-names-vector ["black" "red4" "green4" "yellow4" "blue3" "magenta4" "cyan4" "white"])
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 
-(add-hook 'ruby-mode-hook 'whitespace-mode)
+;; not in Emacs 22, built into Emacs 23
+;;(add-hook 'ruby-mode-hook 'whitespace-mode)
 
 
 ;; create a couple of shells
@@ -77,6 +78,15 @@
 (global-set-key "\C-cs" 'ecb-goto-window-sources)
 ;;  C-d d ecb-goto-window-directories
 (global-set-key "\C-cd" 'ecb-goto-window-directories)
+
+;; see http://www.emacswiki.org/emacs/DosToUnix
+(defun dos2unix ()
+      "Not exactly but it's easier to remember"
+      (interactive)
+      (set-buffer-file-coding-system 'unix 't) )
+
+;; set the default printer name
+;;(setq printer-name "//apogee/CS4000N")
 
 ;; Mustbe the last line in file
 (regen-autoloads)
