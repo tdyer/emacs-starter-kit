@@ -66,5 +66,17 @@
 (require 'ecb-autoloads)
 (setq  ecb-auto-activate 'on)
 
+;; My Key Mappings for ECB
+;;  C-c 1 ecb-goto-window-edit1
+(global-set-key "\C-c1" 'ecb-goto-window-edit1)
+;;  C-c h ecb-goto-window-history
+(global-set-key "\C-ch" 'ecb-goto-window-history)
+;;  C-c m ecb-goto-window-methods
+(global-set-key "\C-cm" 'ecb-goto-window-methods)
+;;  C-c s ecb-goto-window-sources
+(global-set-key "\C-cs" 'ecb-goto-window-sources)
+;;  C-d d ecb-goto-window-directories
+(global-set-key "\C-cd" 'ecb-goto-window-directories)
+
 ;; Mustbe the last line in file
 (regen-autoloads)
