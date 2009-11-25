@@ -60,5 +60,11 @@
 ;; Enable SRecode (Template management) minor-mode.
 ;; (global-srecode-minor-mode 1)
 
+;; ECB
+(add-to-list 'load-path "~/.emacs.d/tdyer/ecb-2.40")
+(require 'ecb)
+(require 'ecb-autoloads)
+(setq  ecb-auto-activate 'on)
 
+;; Mustbe the last line in file
 (regen-autoloads)
