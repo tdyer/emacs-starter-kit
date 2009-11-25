@@ -2,6 +2,7 @@
 ;; http://amitp.blogspot.com/2007/04/emacs-color-in-shell-buffers.html
 (setq ansi-color-names-vector ["black" "red4" "green4" "yellow4" "blue3" "magenta4" "cyan4" "white"])
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
+(add-hook 'inf-ruby-mode 'ansi-color-for-comint-mode-on)
 
 ;; not in Emacs 22, built into Emacs 23
 ;;(add-hook 'ruby-mode-hook 'whitespace-mode)
@@ -106,6 +107,10 @@
 (require 'rinari)
 (setq rinari-tags-file-name "TAGS")
 
+;; ido
+(require 'ido)
+(ido-mode t)
+
 ;; be careful not to override other key mappings here!!!!
 ;; had to fix this, changed the find-file-in-project
 ;; http://groups.google.com/group/emacs-on-rails/browse_thread/thread/944fa162f8087265
@@ -149,6 +154,8 @@
 (global-set-key "\C-cfs" 'rinari-find-stylesheet)
 
 ;; set the color theme to one based on TextMate
-(color-theme-twilight)
+;; (color-theme-twilight)
+(load-file "~/.emacs.d/tdyer/.emacs-color-theme")
+
 ;; Mustbe the last line in file
 (regen-autoloads)
