@@ -6,6 +6,20 @@
 ;; not in Emacs 22, built into Emacs 23
 ;;(add-hook 'ruby-mode-hook 'whitespace-mode)
 
+;; 
+(setq default-frame-alist '(
+                            (top . 50) 
+                            (left . 150) 
+;;                            (width . 120) 
+;;                            (height . 60)
+                            (width . 140) 
+                            (height . 40)
+                            (foreground-color . "white")
+                            (background-color . "black")
+                            (font . "-apple-monaco-medium-r-normal--14-140-72-72-m-140-iso10646-1")
+;;                            (font . "-*-*-medium-r-normal--9-*-*-*-*-*-fontset-hiraginokaku")
+                            ))
+
 
 ;; create a couple of shells
 (eshell)
@@ -88,5 +102,53 @@
 ;; set the default printer name
 ;;(setq printer-name "//apogee/CS4000N")
 
+;; Add rinari
+(require 'rinari)
+(setq rinari-tags-file-name "TAGS")
+
+;; be careful not to override other key mappings here!!!!
+;; had to fix this, changed the find-file-in-project
+;; http://groups.google.com/group/emacs-on-rails/browse_thread/thread/944fa162f8087265
+;; C-c ff find-file-in-project
+;;(global-set-key "\C-cff" 'find-file-in-project) 
+;;  C-c fo toggle-buffer
+(global-set-key "\C-cfo" 'toggle-buffer)
+;;  C-c fs rinari-script
+(global-set-key "\C-cfs" 'rinari-script)
+;;  C-c e rinari-insert-erb-skeleton
+(global-set-key "\C-ce" 'rinari-insert-erb-skeleton)
+;;  C-c t rinari-test
+(global-set-key "\C-ct" 'rinari-test)
+;;  C-c r rinari-rake
+(global-set-key "\C-cr" 'rinari-rake)
+;;  C-c c rinari-console
+(global-set-key "\C-cc" 'rinari-console)
+;;  C-c w rinari-web-server
+(global-set-key "\C-cw" 'rinari-web-server)
+;;  C-c g rinari-grep
+(global-set-key "\C-cg" 'rinari-rgrep)
+;;  C-c b rinari-browse-url
+(global-set-key "\C-cb" 'rinari-browse-url)
+;;  C-c q rinari-sql
+(global-set-key "\C-cq" 'rinari-sql)
+;;  C-c fc rinari-find-controller
+(global-set-key "\C-cfc" 'rinari-find-controller)
+;;  C-c ft rinari-find-test
+(global-set-key "\C-cft" 'rinari-find-test)
+;;  C-c fv rinari-find-view
+(global-set-key "\C-cfv" 'rinari-find-view)
+;;  C-c fm rinari-find-model
+(global-set-key "\C-cfm" 'rinari-find-model)
+;;  C-c fi rinari-find-migration
+(global-set-key "\C-cfi" 'rinari-find-migration)
+;;  C-c fe rinari-find-environment
+(global-set-key "\C-cfe" 'rinari-find-environment)
+;;  C-c fj rinari-find-javascript
+(global-set-key "\C-cfj" 'rinari-find-javascript)
+;;  C-c fs rinari-find-stylesheet
+(global-set-key "\C-cfs" 'rinari-find-stylesheet)
+
+;; set the color theme to one based on TextMate
+(color-theme-twilight)
 ;; Mustbe the last line in file
 (regen-autoloads)
