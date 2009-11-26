@@ -45,7 +45,7 @@
 ;; Ex: Installing 
 ;; cd ~/.emacs.d/tdyer/cedet-1.0pre6
 ;; sudo make install-info PREFIX=~/.emacs.d/tdyer
-(add-to-list 'Info-directory-list (concat dotfiles-dir "/tdyer/share/info"))
+(add-to-list 'Info-default-directory-list (concat dotfiles-dir "tdyer/share/info"))
 
 
 ;; Load CEDET.
