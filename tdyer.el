@@ -45,6 +45,8 @@
 ;; Ex: Installing 
 ;; cd ~/.emacs.d/tdyer/cedet-1.0pre6
 ;; sudo make install-info PREFIX=~/.emacs.d/tdyer
+;; The Info-default-directory-list will NOT be used if there in a
+;; INFOPATH env var, check you're .bash_profile
 (add-to-list 'Info-default-directory-list (concat dotfiles-dir "tdyer/share/info"))
 
 
