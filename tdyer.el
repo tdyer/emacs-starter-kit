@@ -23,22 +23,22 @@
 
 
 ;; create a couple of shells
-(eshell)
+(shell)
 (rename-buffer "autospec")
 
-(eshell)
+(shell)
 (rename-buffer "aaa")
 
-(eshell)
+(shell)
 (rename-buffer "bbb")
 
-(eshell)
+(shell)
 (rename-buffer "zzz")
 
-(eshell)
+(shell)
 (rename-buffer "yyy")
 
-(eshell)
+(shell)
 (rename-buffer "xxx")
 
 ;; add a local info directory for text-info files
