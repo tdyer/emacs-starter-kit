@@ -27,6 +27,12 @@
 (rename-buffer "autospec")
 
 (shell)
+(rename-buffer "db")
+
+(shell)
+(rename-buffer "git")
+
+(shell)
 (rename-buffer "aaa")
 
 (shell)
