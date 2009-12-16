@@ -165,5 +165,12 @@
 ;; (color-theme-twilight)
 (load-file "~/.emacs.d/tdyer/.emacs-color-theme")
 
-;; Mustbe the last line in file
+
+;; ack, much faster than grep or rgrep
+;; see http://fosscasts.com/screencasts/download_mov/15_ack.mov
+;; and http://betterthangrep.com/
+;; http://repo.or.cz/w/ShellArchive.git?a=blob_plain;hb=HEAD;f=ack.el
+(require 'ack)
+
+;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)
