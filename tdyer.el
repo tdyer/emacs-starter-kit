@@ -1,3 +1,21 @@
+
+;;
+(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/tdyer")
+
+;; ack, much faster than grep or rgrep
+;; see http://fosscasts.com/screencasts/download_mov/15_ack.mov
+;; and http://betterthangrep.com/
+;; http://repo.or.cz/w/ShellArchive.git?a=blob_plain;hb=HEAD;f=ack.el
+(require 'ack)
+
+;; do this when ruby-mode is required
+(when (require 'ruby-mode nil t)
+  ;; turn on ruby-electric-mode when ruby-mode is invoked
+  (add-hook 'ruby-mode-hook
+            '(lambda ()
+               (ruby-electric-mode 1))))
+
 ;; Fix junk characters in shell mode
 ;; http://amitp.blogspot.com/2007/04/emacs-color-in-shell-buffers.html
 (setq ansi-color-names-vector ["black" "red4" "green4" "yellow4" "blue3" "magenta4" "cyan4" "white"])
@@ -164,13 +182,6 @@
 ;; set the color theme to one based on TextMate
 ;; (color-theme-twilight)
 (load-file "~/.emacs.d/tdyer/.emacs-color-theme")
-
-
-;; ack, much faster than grep or rgrep
-;; see http://fosscasts.com/screencasts/download_mov/15_ack.mov
-;; and http://betterthangrep.com/
-;; http://repo.or.cz/w/ShellArchive.git?a=blob_plain;hb=HEAD;f=ack.el
-(require 'ack)
 
 ;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)
