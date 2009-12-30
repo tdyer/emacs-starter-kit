@@ -183,5 +183,14 @@
 ;; (color-theme-twilight)
 (load-file "~/.emacs.d/tdyer/.emacs-color-theme")
 
+;; org-mode
+;; http://orgmode.org/worg/org-tutorials/orgtutorial_dto.php
+(add-to-list 'load-path "~/.emacs.d/tdyer/org-mode")
+(require 'org-install)
+(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
+(setq org-log-done t)
+
 ;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)
