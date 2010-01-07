@@ -192,5 +192,9 @@
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
 
+;; set line number in buffer
+(require 'linum)
+;;(global-linum-mode 1)  ;; line numbering in every buffer
+
 ;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)
