@@ -106,7 +106,7 @@
 (add-to-list 'load-path "~/.emacs.d/tdyer/ecb-2.40")
 (require 'ecb)
 (require 'ecb-autoloads)
-(setq  ecb-auto-activate 'on)
+;;(setq  ecb-auto-activate 'on)
 
 ;; My Key Mappings for ECB
 ;;  C-c 1 ecb-goto-window-edit1
