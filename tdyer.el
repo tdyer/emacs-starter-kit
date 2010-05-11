@@ -196,5 +196,26 @@
 (require 'linum)
 ;;(global-linum-mode 1)  ;; line numbering in every buffer
 
+(require 'js-comint)
+(setq inferior-js-program-command "/usr/bin/java org.mozilla.javascript.tools.shell.Main")
+(add-hook 'js2-mode-hook '(lambda () 
+;; 			    (local-set-key "\C-x\C-e" 'js-send-last-sexp)
+;; 			    (local-set-key "\C-\M-x" 'js-send-last-sexp-and-go)
+;; 			    (local-set-key "\C-cb" 'js-send-buffer)
+;; 			    (local-set-key "\C-c\C-b" 'js-send-buffer-and-go)
+;; 			    (local-set-key "\C-cl" 'js-load-file-and-go)
+                            
+                            (local-set-key "\C-xe" 'js-send-last-sexp-and-go)
+			    (local-set-key "\C-xb" 'js-send-buffer-and-go)
+			    ))
+
+(add-to-list 'load-path "~/.emacs.d/vendor/textmate.el")
+(require 'textmate)
+(textmate-mode)
+(add-to-list 'load-path "~/.emacs.d/vendor/")
+(require 'peepopen)
+
+;; 
 ;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)
+
