@@ -42,7 +42,10 @@
 
 ;; create a couple of shells
 (shell)
-(rename-buffer "autospec")
+(rename-buffer "autotest")
+
+(shell)
+(rename-buffer "console")
 
 (shell)
 (rename-buffer "db")
@@ -215,6 +218,15 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/")
 (require 'peepopen)
 
+;; By Charles Magid
+;; Filter Rails log
+;; M-x cmm-ror-controller-action-render-filter
+(defun cmm-ror-controller-action-render-filter ()
+  "Switch to Rails Log file then execute command to list all of the controller actions and rendering from a log file"
+  (interactive)
+  (list-matching-lines "\\(^Processing .+\\#\\|^Rendering .+/\\)" nil)
+  (switch-to-buffer "*Occur*")
+  (font-lock-fontify-buffer))
 ;; 
 ;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)
