@@ -227,7 +227,14 @@
   (list-matching-lines "\\(^Processing .+\\#\\|^Rendering .+/\\)" nil)
   (switch-to-buffer "*Occur*")
   (font-lock-fontify-buffer))
-;; 
+
+;; git stuff from the git 1.7.1 release
+;; copied from ~/src/git-1.7.1/contrib/emacs to
+;; ~/.emacs.d/tdyer/git/emacs
+(add-to-list 'load-path "~/.emacs.d/tdyer/git/emacs")
+(require 'git)
+(require 'git-blame)
+
 ;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)
 
