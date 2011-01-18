@@ -43,25 +43,22 @@
 ;; create a couple of shells
 (shell)
 (rename-buffer "autotest")
-
+(shell)
+(rename-buffer "spork")
+(shell)
+(rename-buffer "server")
 (shell)
 (rename-buffer "console")
-
 (shell)
 (rename-buffer "db")
-
 (shell)
 (rename-buffer "git")
-
 (shell)
 (rename-buffer "aaa")
-
 (shell)
 (rename-buffer "bbb")
-
 (shell)
 (rename-buffer "zzz")
-
 (shell)
 (rename-buffer "yyy")
 
@@ -135,6 +132,8 @@
 ;; Add rinari
 (require 'rinari)
 (setq rinari-tags-file-name "TAGS")
+;; turn off ugly blue background in the erb and html files
+(setq mumamo-chunk-coloring 1)
 
 ;; ido
 (require 'ido)
@@ -235,6 +234,19 @@
 (require 'git)
 (require 'git-blame)
 
+;; lorem ipsum texst
+(require 'lorem-ipsum)
+
+;; yari.el
+;; A better ri for emacs?
+(require 'yari)
+
+;;
+(require 'haml-mode)
+(add-hook 'haml-mode-hook
+          '(lambda ()
+             (setq indent-tabs-mode nil)
+                                      (define-key haml-mode-map "\C-m" 'newline-and-indent)))
 ;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)
 

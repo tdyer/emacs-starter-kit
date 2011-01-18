@@ -48,7 +48,7 @@
 (require 'starter-kit-elpa)
 
 ;;(load "elpa-to-submit/nxhtml/autostart")
-;;(load "~/src/nxhtml/autostart")
+(load "~/src/nxhtml/autostart")
 
 ;; Load up starter kit customizations
 
@@ -88,3 +88,4 @@
   (mapc #'load (directory-files common-user-specific-dir nil ".*el$")))
 
 ;;; init.el ends here
+(put 'set-goal-column 'disabled nil)
