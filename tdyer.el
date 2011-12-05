@@ -215,7 +215,11 @@
 (require 'textmate)
 (textmate-mode)
 (add-to-list 'load-path "~/.emacs.d/vendor/")
+(setq ns-pop-up-frames nil)
 (require 'peepopen)
+;; bind to Apple key - t
+;;(define-key *textmate-mode-map* (kbd "A-t") 'peepopen-goto-file-gui))
+(global-set-key "\M-t" 'peepopen-goto-file-gui)
 
 ;; By Charles Magid
 ;; Filter Rails log
@@ -249,4 +253,20 @@
                                       (define-key haml-mode-map "\C-m" 'newline-and-indent)))
 ;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)
+
+;; WARNING comment this out when running headless or multiple emacs
+;; allow opening of files in running emacs
+(server-start) ;;; Use C-x # to close an emacsclient buffer.
+
+;;(setq-defualt tab-width 2)
+
+;; https://github.com/defunkt/coffee-mode
+(add-to-list 'load-path "~/.emacs.d/vendor/coffee-mode")
+(require 'coffee-mode)
+(defun coffee-custom ()
+  "coffee-mode-hook"
+  (set (make-local-variable 'tab-width) 2))
+
+(add-hook 'coffee-mode-hook
+          '(lambda () (coffee-custom)))
 
