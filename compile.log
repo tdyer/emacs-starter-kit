@@ -1,357 +1,0 @@
-
-Compiling file /Users/tom/.emacs.d/elpa/idle-highlight-1.0/idle-highlight-pkg.el at Tue Nov 24 03:27:43 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/idle-highlight-1.0/idle-highlight.el at Tue Nov 24 03:27:43 2009
-
-Compiling no file at Tue Nov 24 03:27:44 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/ruby-mode-1.1/ruby-mode-pkg.el at Tue Nov 24 03:27:44 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/ruby-mode-1.1/ruby-mode.el at Tue Nov 24 03:27:44 2009
-
-In ruby-mode-variables:
-ruby-mode.el:296:58:Warning: `make-variable-buffer-local' should be called at
-    toplevel
-ruby-mode.el:292:37:Warning: `make-variable-buffer-local' should be called at
-    toplevel
-ruby-mode.el:293:37:Warning: `make-variable-buffer-local' should be called at
-    toplevel
-ruby-mode.el:294:53:Warning: `make-variable-buffer-local' should be called at
-    toplevel
-
-In ruby-mode:
-ruby-mode.el:369:50:Warning: reference to free variable
-    `ruby-font-lock-keywords'
-ruby-mode.el:370:54:Warning: reference to free variable
-    `ruby-font-lock-syntax-table'
-ruby-mode.el:371:60:Warning: reference to free variable
-    `ruby-font-lock-syntactic-keywords'
-
-In ruby-parse-partial:
-ruby-mode.el:681:32:Warning: reference to free variable `indent-point'
-
-Compiling no file at Tue Nov 24 03:27:44 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/inf-ruby-2.1/inf-ruby-pkg.el at Tue Nov 24 03:27:44 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/inf-ruby-2.1/inf-ruby.el at Tue Nov 24 03:27:44 2009
-
-Compiling no file at Tue Nov 24 03:27:46 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/js2-mode-20090723/js2-mode-pkg.el at Tue Nov 24 03:27:46 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/js2-mode-20090723/js2-mode.el at Tue Nov 24 03:27:46 2009
-
-Compiling no file at Tue Nov 24 03:27:52 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/css-mode-1.0/css-mode-pkg.el at Tue Nov 24 03:27:52 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/css-mode-1.0/css-mode.el at Tue Nov 24 03:27:52 2009
-css-mode.el:43:1:Warning: defcustom for `css-indent-level' fails to specify
-    containing group
-
-Compiling no file at Tue Nov 24 03:27:52 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/gist-0.3/gist-pkg.el at Tue Nov 24 03:27:52 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/gist-0.3/gist.el at Tue Nov 24 03:27:52 2009
-
-In gist-fetch:
-gist.el:209:43:Warning: `beginning-of-buffer' used from Lisp code
-That command is designed for interactive use only
-
-Compiling no file at Tue Nov 24 03:27:56 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/nxml-enc.el at Tue Nov 24 03:27:56 2009
-
-In end of data:
-nxml-enc.el:168:1:Warning: the function
-    `xmltok-get-declared-encoding-position' is not known to be defined.
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/nxml-glyph.el at Tue Nov 24 03:27:56 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/nxml-maint.el at Tue Nov 24 03:27:56 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/nxml-mode-pkg.el at Tue Nov 24 03:27:56 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/nxml-mode.el at Tue Nov 24 03:27:56 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/nxml-ns.el at Tue Nov 24 03:27:57 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/nxml-outln.el at Tue Nov 24 03:27:57 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/nxml-parse.el at Tue Nov 24 03:27:57 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/nxml-rap.el at Tue Nov 24 03:27:57 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/nxml-uchnm.el at Tue Nov 24 03:27:57 2009
-nxml-uchnm.el:218:1:Warning: defcustom for `nxml-enabled-unicode-blocks' fails
-    to specify containing group
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/nxml-util.el at Tue Nov 24 03:27:57 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/rng-auto.el at Tue Nov 24 03:27:57 2009
-
-In rng-add-info-dir:
-rng-auto.el:43:30:Warning: reference to free variable `Info-directory-list'
-rng-auto.el:45:52:Warning: assignment to free variable `Info-directory-list'
-rng-auto.el:64:9:Warning: assignment to free variable
-    `rng-schema-locating-files-default'
-rng-auto.el:68:9:Warning: assignment to free variable
-    `rng-schema-locating-file-schema-file'
-rng-auto.el:75:7:Warning: assignment to free variable
-    `rng-preferred-prefix-alist-default'
-rng-auto.el:83:7:Warning: assignment to free variable
-    `rng-schema-loader-alist'
-
-In end of data:
-rng-auto.el:282:1:Warning: the following functions are not known to be defined:
-    w32-add-charset-info, Info-find-node-2
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/rng-cmpct.el at Tue Nov 24 03:27:57 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/rng-dt.el at Tue Nov 24 03:27:57 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/rng-loc.el at Tue Nov 24 03:27:57 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/rng-maint.el at Tue Nov 24 03:27:57 2009
-
-In rng-validate-buffer:
-rng-maint.el:337:9:Warning: assignment to free variable
-    `rng-validate-up-to-date-end'
-rng-maint.el:339:9:Warning: assignment to free variable `rng-error-count'
-
-In end of data:
-rng-maint.el:344:1:Warning: the following functions are not known to be defined:
-    rng-clear-cached-state, rng-clear-overlays,
-    rng-clear-conditional-region, rng-do-some-validation
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/rng-match.el at Tue Nov 24 03:27:57 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/rng-nxml.el at Tue Nov 24 03:27:57 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/rng-parse.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/rng-pttrn.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/rng-uri.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/rng-util.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/rng-valid.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/rng-xsd.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/xmltok.el at Tue Nov 24 03:27:58 2009
-
-In xmltok-scan-char-ref:
-xmltok.el:1036:19:Warning: `string-to-int' is an obsolete function (as of
-    Emacs 22.1); use `string-to-number' instead.
-
-In xmltok-char-number:
-xmltok.el:1050:14:Warning: `string-to-int' is an obsolete function (as of
-    Emacs 22.1); use `string-to-number' instead.
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/xsd-regexp.el at Tue Nov 24 03:27:58 2009
-Leaving directory `/Users/tom/.emacs.d/elpa/nxml-mode-20041004/'
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00000-0007F.el at Tue Nov 24 03:27:58 2009
-Entering directory `/Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/'
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00080-000FF.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00100-0017F.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00180-0024F.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00250-002AF.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/002B0-002FF.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00300-0036F.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00370-003FF.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00400-004FF.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00500-0052F.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00530-0058F.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00590-005FF.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00600-006FF.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00700-0074F.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00780-007BF.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00900-0097F.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00980-009FF.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00A00-00A7F.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00A80-00AFF.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00B00-00B7F.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00B80-00BFF.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00C00-00C7F.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00C80-00CFF.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00D00-00D7F.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00D80-00DFF.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00E00-00E7F.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00E80-00EFF.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/00F00-00FFF.el at Tue Nov 24 03:27:58 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/01000-0109F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/010A0-010FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/01100-011FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/01200-0137F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/013A0-013FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/01400-0167F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/01680-0169F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/016A0-016FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/01700-0171F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/01720-0173F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/01740-0175F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/01760-0177F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/01780-017FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/01800-018AF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/01E00-01EFF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/01F00-01FFF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02000-0206F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02070-0209F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/020A0-020CF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/020D0-020FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02100-0214F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02150-0218F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02190-021FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02200-022FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02300-023FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02400-0243F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02440-0245F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02460-024FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02500-0257F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02580-0259F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/025A0-025FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02600-026FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02700-027BF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/027C0-027EF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/027F0-027FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02800-028FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02900-0297F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02980-029FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02A00-02AFF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02E80-02EFF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02F00-02FDF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/02FF0-02FFF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/03000-0303F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/03040-0309F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/030A0-030FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/03100-0312F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/03130-0318F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/03190-0319F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/031A0-031BF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/031F0-031FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/03200-032FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/03300-033FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/03400-04DBF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/0A000-0A48F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/0A490-0A4CF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/0FB00-0FB4F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/0FB50-0FDFF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/0FE00-0FE0F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/0FE20-0FE2F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/0FE30-0FE4F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/0FE50-0FE6F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/0FE70-0FEFF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/0FF00-0FFEF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/0FFF0-0FFFF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/10300-1032F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/10330-1034F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/10400-1044F.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/1D000-1D0FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/1D100-1D1FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/1D400-1D7FF.el at Tue Nov 24 03:27:59 2009
-
-Compiling file /Users/tom/.emacs.d/elpa/nxml-mode-20041004/char-name/unicode/E0000-E007F.el at Tue Nov 24 03:28:00 2009
-
-Compiling no file at Tue Nov 24 03:28:01 2009

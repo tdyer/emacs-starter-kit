@@ -42,9 +42,7 @@
 
 ;; create a couple of shells
 (shell)
-(rename-buffer "autotest")
-(shell)
-(rename-buffer "spork")
+(rename-buffer "test")
 (shell)
 (rename-buffer "server")
 (shell)
@@ -76,8 +74,8 @@
 
 ;; Load CEDET.
 ;; (add-to-list 'load-path (concat dotfiles-dir "tdyer/cedet-1.0pre6"))
-(load-file "~/.emacs.d/tdyer/cedet-1.0pre6/common/cedet.el")
-
+;; (load-file "~/.emacs.d/tdyer/cedet-1.0pre6/common/cedet.el")
+ (load-file "~/src/cedet-1.1/common/cedet.el")
 ;; Enable EDE (Project Management) features
 (global-ede-mode 1)
 
@@ -93,7 +91,8 @@
 
 ;; * This enables even more coding tools such as intellisense mode
 ;;   decoration mode, and stickyfunc mode (plus regular code helpers)
-(semantic-load-enable-gaudy-code-helpers)
+;; turned off for emacs 24.2.1
+;; (semantic-load-enable-gaudy-code-helpers)
 
 ;; * This enables the use of Exuberent ctags if you have it installed.
 ;;   If you use C++ templates or boost, you should NOT enable it.
@@ -198,18 +197,18 @@
 (require 'linum)
 ;;(global-linum-mode 1)  ;; line numbering in every buffer
 
-(require 'js-comint)
-(setq inferior-js-program-command "/usr/bin/java org.mozilla.javascript.tools.shell.Main")
-(add-hook 'js2-mode-hook '(lambda () 
-;; 			    (local-set-key "\C-x\C-e" 'js-send-last-sexp)
-;; 			    (local-set-key "\C-\M-x" 'js-send-last-sexp-and-go)
-;; 			    (local-set-key "\C-cb" 'js-send-buffer)
-;; 			    (local-set-key "\C-c\C-b" 'js-send-buffer-and-go)
-;; 			    (local-set-key "\C-cl" 'js-load-file-and-go)
+;; (require 'js-comint)
+;; (setq inferior-js-program-command "/usr/bin/java org.mozilla.javascript.tools.shell.Main")
+;; (add-hook 'js2-mode-hook '(lambda () 
+;; ;; 			    (local-set-key "\C-x\C-e" 'js-send-last-sexp)
+;; ;; 			    (local-set-key "\C-\M-x" 'js-send-last-sexp-and-go)
+;; ;; 			    (local-set-key "\C-cb" 'js-send-buffer)
+;; ;; 			    (local-set-key "\C-c\C-b" 'js-send-buffer-and-go)
+;; ;; 			    (local-set-key "\C-cl" 'js-load-file-and-go)
                             
-                            (local-set-key "\C-xe" 'js-send-last-sexp-and-go)
-			    (local-set-key "\C-xb" 'js-send-buffer-and-go)
-			    ))
+;;                             (local-set-key "\C-xe" 'js-send-last-sexp-and-go)
+;; 			    (local-set-key "\C-xb" 'js-send-buffer-and-go)
+;; 			    ))
 
 (add-to-list 'load-path "~/.emacs.d/vendor/textmate.el")
 (require 'textmate)
@@ -270,3 +269,27 @@
 (add-hook 'coffee-mode-hook
           '(lambda () (coffee-custom)))
 
+;; emacs.js Doesn't work ???
+;; (load-file "~/.emacs.d/emacs_js_init.el")
+;; (load-file "~/.emacs.d/emacs_js.el")
+
+;;  js2-mode http://code.google.com/p/js2-mode/wiki/InstallationInstructions
+(autoload 'js2-mode "js2" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
+;; https://github.com/stanaka/dash-at-point#readme
+(add-to-list 'load-path "~/.emacs.d/tdyer/dash-at-point.el")
+(autoload 'dash-at-point "dash-at-point"
+          "Search the word at point with Dash." t nil)
+(global-set-key "\C-ck" 'dash-at-point)
+(add-hook 'rinari-minor-mode-hook
+                    (lambda () (setq dash-at-point-docset "rails")))
+(add-hook 'ruby--mode-hook
+                    (lambda () (setq dash-at-point-docset "ruby")))
+
+;; http://jblevins.org/projects/markdown-mode/
+(autoload 'markdown-mode "markdown-mode"
+  "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
