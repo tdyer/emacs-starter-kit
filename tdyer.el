@@ -25,13 +25,13 @@
 ;; not in Emacs 22, built into Emacs 23
 ;;(add-hook 'ruby-mode-hook 'whitespace-mode)
 
-;; 
+;;
 (setq default-frame-alist '(
-                            (top . 50) 
-                            (left . 150) 
-;;                            (width . 120) 
+                            (top . 50)
+                            (left . 150)
+;;                            (width . 120)
 ;;                            (height . 60)
-                            (width . 140) 
+                            (width . 140)
                             (height . 40)
                             (foreground-color . "white")
                             (background-color . "black")
@@ -64,7 +64,7 @@
 (rename-buffer "xxx")
 
 ;; add a local info directory for text-info files
-;; Ex: Installing 
+;; Ex: Installing
 ;; cd ~/.emacs.d/tdyer/cedet-1.0pre6
 ;; sudo make install-info PREFIX=~/.emacs.d/tdyer
 ;; The Info-default-directory-list will NOT be used if there in a
@@ -144,7 +144,7 @@
 ;; had to fix this, changed the find-file-in-project
 ;; http://groups.google.com/group/emacs-on-rails/browse_thread/thread/944fa162f8087265
 ;; C-c ff find-file-in-project
-;;(global-set-key "\C-cff" 'find-file-in-project) 
+;;(global-set-key "\C-cff" 'find-file-in-project)
 ;;  C-c fo toggle-buffer
 (global-set-key "\C-cfo" 'toggle-buffer)
 ;;  C-c fs rinari-script
@@ -201,13 +201,13 @@
 
 ;; (require 'js-comint)
 ;; (setq inferior-js-program-command "/usr/bin/java org.mozilla.javascript.tools.shell.Main")
-;; (add-hook 'js2-mode-hook '(lambda () 
+;; (add-hook 'js2-mode-hook '(lambda ()
 ;; ;; 			    (local-set-key "\C-x\C-e" 'js-send-last-sexp)
 ;; ;; 			    (local-set-key "\C-\M-x" 'js-send-last-sexp-and-go)
 ;; ;; 			    (local-set-key "\C-cb" 'js-send-buffer)
 ;; ;; 			    (local-set-key "\C-c\C-b" 'js-send-buffer-and-go)
 ;; ;; 			    (local-set-key "\C-cl" 'js-load-file-and-go)
-                            
+
 ;;                             (local-set-key "\C-xe" 'js-send-last-sexp-and-go)
 ;; 			    (local-set-key "\C-xb" 'js-send-buffer-and-go)
 ;; 			    ))
@@ -301,6 +301,21 @@
 
 (add-hook 'find-file-hook (lambda () (setq buffer-read-only t)))
 
+(mapc (lambda (hook)
+        (add-hook hook (lambda ()
+                         (setq show-trailing-whitespace t))))
+      '(text-mode-hook
+        emacs-lisp-mode-hook
+        ruby-mode-hook
+        javascript-mode-hook
+        coffee-mode-hook
+        haml-mode-hooka
+        html-mode-hook
+        python-mode-hook
+        js2-mode-hook
+        css-mode-hook
+        ))
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 ;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)
-
