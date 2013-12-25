@@ -16,6 +16,9 @@
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
 ;; Load path etc.
+;;
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
 
 (setq dotfiles-dir (file-name-directory
                     (or (buffer-file-name) load-file-name)))
@@ -88,4 +91,5 @@
 (if (file-exists-p common-user-specific-dir)
   (mapc #'load (directory-files common-user-specific-dir nil ".*el$")))
 
+(add-hook 'after-init-hook #'global-flycheck-mode)
 ;;; init.el ends here
