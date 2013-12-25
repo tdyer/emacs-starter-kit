@@ -74,8 +74,8 @@
 
 ;; Load CEDET.
 ;; (add-to-list 'load-path (concat dotfiles-dir "tdyer/cedet-1.0pre6"))
-;; (load-file "~/.emacs.d/tdyer/cedet-1.0pre6/common/cedet.el")
- (load-file "~/src/cedet-1.1/common/cedet.el")
+(load-file "~/.emacs.d/tdyer/cedet-1.0pre6/common/cedet.el")
+;;  (load-file "~/src/cedet-1.1/common/cedet.el")
 ;; Enable EDE (Project Management) features
 (global-ede-mode 1)
 
@@ -100,6 +100,8 @@
 
 ;; Enable SRecode (Template management) minor-mode.
 ;; (global-srecode-minor-mode 1)
+
+(setq stack-trace-on-error t)
 
 ;; ECB
 (add-to-list 'load-path "~/.emacs.d/tdyer/ecb-2.40")
@@ -210,9 +212,9 @@
 ;; 			    (local-set-key "\C-xb" 'js-send-buffer-and-go)
 ;; 			    ))
 
-(add-to-list 'load-path "~/.emacs.d/vendor/textmate.el")
-(require 'textmate)
-(textmate-mode)
+;; (add-to-list 'load-path "~/.emacs.d/vendor/textmate.el")
+;; (require 'textmate)
+;; (textmate-mode)
 (add-to-list 'load-path "~/.emacs.d/vendor/")
 (setq ns-pop-up-frames nil)
 (require 'peepopen)
@@ -250,9 +252,6 @@
           '(lambda ()
              (setq indent-tabs-mode nil)
                                       (define-key haml-mode-map "\C-m" 'newline-and-indent)))
-;; MUST BE THE LAST LINE IN FILE
-(regen-autoloads)
-
 ;; WARNING comment this out when running headless or multiple emacs
 ;; allow opening of files in running emacs
 (server-start) ;;; Use C-x # to close an emacsclient buffer.
@@ -293,3 +292,15 @@
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
+
+(add-to-list 'load-path "~/.emacs.d/vendor/bundler.el")
+(require 'bundler)
+
+(add-hook 'find-file-hook (lambda () (setq buffer-read-only t)))
+
+;; MUST BE THE LAST LINE IN FILE
+(regen-autoloads)
+
