@@ -299,7 +299,7 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/bundler.el")
 (require 'bundler)
 
-(add-hook 'find-file-hook (lambda () (setq buffer-read-only t)))
+;;(add-hook 'find-file-hook (lambda () (setq buffer-read-only t)))
 
 (mapc (lambda (hook)
         (add-hook hook (lambda ()
