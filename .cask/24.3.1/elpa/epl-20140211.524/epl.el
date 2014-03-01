@@ -1,12 +1,12 @@
 ;;; epl.el --- Emacs Package Library -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2013 Sebastian Wiesner
+;; Copyright (C) 2013, 2014 Sebastian Wiesner
 
 ;; Author: Sebastian Wiesner <lunaryorn@gmail.com>
 ;; Maintainer: Johan Andersson <johan.rejeep@gmail.com>
 ;;     Sebastian Wiesner <lunaryorn@gmail.com>
-;; Version: 20131101.405
-;; X-Original-Version: 0.5-cvs
+;; Version: 20140211.524
+;; X-Original-Version: 0.6-cvs
 ;; Package-Requires: ((cl-lib "0.3"))
 ;; Keywords: convenience
 ;; URL: http://github.com/cask/epl
@@ -95,7 +95,11 @@
 
 ;; `epl-find-upgrades' finds all upgradable packages.
 
+;; `epl-built-in-p' return true if package is built-in to Emacs.
+
 ;;; Package operations
+
+;; `epl-install-file' installs a package file.
 
 ;; `epl-package-install' installs a package.
 
@@ -492,8 +496,12 @@ packages."
                 upgrades))))
     (nreverse upgrades)))
 
+(defalias 'epl-built-in-p 'package-built-in-p)
+
 
 ;;;; Package operations
+
+(defalias 'epl-install-file 'package-install-file)
 
 (defun epl-package-install (package &optional force)
   "Install a PACKAGE.

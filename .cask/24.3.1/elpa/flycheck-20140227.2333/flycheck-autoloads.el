@@ -5,7 +5,7 @@
 
 ;;;### (autoloads (flycheck-define-error-level flycheck-info flycheck-def-option-var
 ;;;;;;  flycheck-def-config-file-var global-flycheck-mode flycheck-mode)
-;;;;;;  "flycheck" "flycheck.el" (21171 17385 0 0))
+;;;;;;  "flycheck" "flycheck.el" (21266 624 0 0))
 ;;; Generated autoloads from flycheck.el
 
 (defconst flycheck-mode-line-lighter " FlyC" "\
@@ -113,14 +113,17 @@ The following PROPERTIES constitute an error level:
      A face symbol denoting the face to use for fringe indicators
      for this level.
 
+`:error-list-face FACE'
+     A face symbol denoting the face to use for messages of this
+     level in the error list.  See `flycheck-list-errors'.
+
 \(fn LEVEL &rest PROPERTIES)" nil nil)
 
 (put 'flycheck-define-error-level 'lisp-indent-function '1)
 
 ;;;***
 
-;;;### (autoloads nil nil ("flycheck-pkg.el") (21171 17385 929441
-;;;;;;  0))
+;;;### (autoloads nil nil ("flycheck-pkg.el") (21266 624 806950 0))
 
 ;;;***
 

@@ -6,7 +6,7 @@
 ;;;### (autoloads (list-packages describe-package package-initialize
 ;;;;;;  package-install-file package-install-from-buffer package-install
 ;;;;;;  package-enable-at-startup) "package-legacy" "package-legacy.el"
-;;;;;;  (21171 16618 0 0))
+;;;;;;  (21266 627 0 0))
 ;;; Generated autoloads from package-legacy.el
 
 (defvar package-enable-at-startup t "\
@@ -69,7 +69,7 @@ The list is displayed in a buffer named `*Packages*'.
 ;;;***
 
 ;;;### (autoloads nil nil ("cask-bootstrap.el" "cask-cli.el" "cask-pkg.el"
-;;;;;;  "cask.el") (21171 16618 184603 0))
+;;;;;;  "cask.el") (21266 627 420107 0))
 
 ;;;***
 

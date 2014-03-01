@@ -3,6 +3,10 @@
 ;;; Code:
 
 
+;;;### (autoloads nil nil ("f-pkg.el" "f.el") (21266 625 600518 0))
+
+;;;***
+
 (provide 'f-autoloads)
 ;; Local Variables:
 ;; version-control: never
