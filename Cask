@@ -6,4 +6,5 @@
 (depends-on "f")
 (depends-on "flycheck")
 (depends-on "pallet")
+(depends-on "pkg-info")
 (depends-on "s")

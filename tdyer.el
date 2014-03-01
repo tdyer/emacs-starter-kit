@@ -185,6 +185,8 @@
 ;; set the color theme to one based on TextMate
 ;; (color-theme-twilight)
 (load-file "~/.emacs.d/tdyer/.emacs-color-theme")
+;;(color-theme-blackboard)
+;;(tgd-black-on-whitecolor)
 
 ;; org-mode
 ;; http://orgmode.org/worg/org-tutorials/orgtutorial_dto.php
@@ -321,6 +323,36 @@
 ;; http://www-sop.inria.fr/members/Manuel.Serrano/flyspell/flyspell.html
 (autoload 'flyspell-mode "flyspell" "On-the-fly spelling checker." t)
 (autoload 'flyspell-delay-command "flyspell" "Delay on command." t) (autoload 'tex-mode-flyspell-verify "flyspell" "" t)
+
+;; https://github.com/jacott/emacs-pry
+(add-to-list 'load-path "~/.emacs.d/vendor/emacs-pry")
+(require 'pry)
+;; optional suggestions
+(global-set-key [S-f9] 'pry-intercept)
+(global-set-key [f9] 'pry-intercept-rerun)
+
+;; Hack up emacs-rails/flymake integration to make autotest happy
+
+;; adapted from flymake.el
+(defun abg-flymake-create-temp-inplace-without-ext (file-name prefix)
+  (unless (stringp file-name)
+    (error "Invalid file-name"))
+  (or prefix
+      (setq prefix "flymake"))
+  (let* ((temp-name (concat (file-name-sans-extension file-name) "." prefix)))
+    (flymake-log 3 "create-temp-inplace: file=%s temp=%s" file-name temp-name)
+    temp-name))
+
+;; redefine to use my custom temp buffer naming method
+(defun flymake-ruby-init ()
+  (condition-case er
+      (let* ((temp-file (flymake-init-create-temp-buffer-copy
+                         'abg-flymake-create-temp-inplace-without-ext))
+             (local-file  (file-relative-name
+                           temp-file
+                           (file-name-directory buffer-file-name))))
+        (list rails-ruby-command (list "-c" local-file)))
+    ('error ())))
 
 ;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)

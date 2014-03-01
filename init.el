@@ -91,5 +91,12 @@
 (if (file-exists-p common-user-specific-dir)
   (mapc #'load (directory-files common-user-specific-dir nil ".*el$")))
 
-(add-hook 'after-init-hook #'global-flycheck-mode)
+(eval-after-load 'flycheck
+  '(add-hook 'flycheck-mode-hook #'flycheck-cask-setup))
+
+(require 'flycheck-color-mode-line)
+(eval-after-load "flycheck"
+    '(add-hook 'flycheck-mode-hook 'flycheck-color-mode-line-mode))
+
+(add-hook 'after-init-hook 'global-flycheck-mode)
 ;;; init.el ends here
