@@ -4,6 +4,7 @@
 (depends-on "cask")
 (depends-on "dash")
 (depends-on "epl")
+(depends-on "expand-region")
 (depends-on "f")
 (depends-on "flycheck")
 (depends-on "pallet")

@@ -365,5 +365,8 @@
 (add-to-list 'ac-modes 'javascript-mode)
 (add-to-list 'ac-modes 'css-mode)
 
+(require 'expand-region)
+(global-set-key (kbd "C-=") 'er/expand-region)
+
 ;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)
