@@ -16,6 +16,7 @@ oddmuse/*
 .DS_Store
 image-dired/
 elim/
+ac-comphist.dat
 elpa-to-submit/nxhtml/etc/schema/xhtml-loader.rnc~
 tramp
 \#*

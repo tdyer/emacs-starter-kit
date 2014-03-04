@@ -7,6 +7,7 @@
 (depends-on "expand-region")
 (depends-on "f")
 (depends-on "flycheck")
+(depends-on "guide-key")
 (depends-on "pallet")
 (depends-on "pkg-info")
 (depends-on "s")

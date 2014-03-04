@@ -31,8 +31,8 @@
                             (left . 150)
 ;;                            (width . 120)
 ;;                            (height . 60)
-                            (width . 140)
-                            (height . 40)
+                            (width . 120)
+                            (height . 30)
                             (foreground-color . "white")
                             (background-color . "black")
                             (font . "-apple-monaco-medium-r-normal--14-140-72-72-m-140-iso10646-1")
@@ -385,6 +385,12 @@
 
 ;; Make backups of files, even when they're in version control
 (setq vc-make-backup-files t)
+
+
+;; Added guide-key to help show all key bindings
+(require 'guide-key)
+(setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-h" "C-x v" "C-+" "C-c"))
+(guide-key-mode 1)  ; Enable guide-key-mode
 
 ;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)
