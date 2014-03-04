@@ -8,6 +8,7 @@
 (depends-on "f")
 (depends-on "flycheck")
 (depends-on "guide-key")
+(depends-on "multiple-cursors")
 (depends-on "pallet")
 (depends-on "pkg-info")
 (depends-on "rinari")

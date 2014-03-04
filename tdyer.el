@@ -391,7 +391,7 @@
 
 ;; Added guide-key to help show all key bindings
 (require 'guide-key)
-(setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-h" "C-x v" "C-+" "C-c f" "C-c" ))
+(setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-h" "C-x v" "C-+" "C-c f" "C-c" "C-x" ))
 (guide-key-mode 1)  ; Enable guide-key-mode
 
 ;; Robe mode
@@ -407,6 +407,12 @@
 (yas-global-mode 1)
 (setq yas-use-menu nil)
 (yas-reload-all)
+
+(require 'multiple-cursors)
+;; (global-set-key (kbd "C->") 'mc/mark-next-like-this)
+;; (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-o") 'mc/mark-all-like-this)
+
 
 ;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)
