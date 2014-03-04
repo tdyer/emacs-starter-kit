@@ -403,5 +403,10 @@
 ;; Turn on CUA selection mode
 (cua-selection-mode  1)
 
+(require 'yasnippet)
+(yas-global-mode 1)
+(setq yas-use-menu nil)
+(yas-reload-all)
+
 ;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)

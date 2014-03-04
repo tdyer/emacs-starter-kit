@@ -13,3 +13,4 @@
 (depends-on "rinari")
 (depends-on "robe")
 (depends-on "s")
+(depends-on "yasnippet")
