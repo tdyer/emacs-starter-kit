@@ -146,7 +146,7 @@
 ;; C-c ff find-file-in-project
 ;;(global-set-key "\C-cff" 'find-file-in-project)
 ;;  C-c fo toggle-buffer
-(global-set-key "\C-cfo" 'toggle-buffer)
+;; (global-set-key "\C-cfo" 'toggle-buffer)
 ;;  C-c fs rinari-script
 (global-set-key "\C-cfs" 'rinari-script)
 ;;  C-c e rinari-insert-erb-skeleton
@@ -181,6 +181,8 @@
 (global-set-key "\C-cfj" 'rinari-find-javascript)
 ;;  C-c fs rinari-find-stylesheet
 (global-set-key "\C-cfs" 'rinari-find-stylesheet)
+;;  C-c cc rinari-configuration
+(global-set-key "\C-cfo" 'rinari-find-configuration)
 
 ;; set the color theme to one based on TextMate
 ;; (color-theme-twilight)
@@ -397,5 +399,9 @@
 (add-hook 'robe-mode-hook 'robe-ac-setup)
 
 (global-set-key "\C-cff" 'ag)
+
+;; Turn on CUA selection mode
+(cua-selection-mode  1)
+
 ;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)
