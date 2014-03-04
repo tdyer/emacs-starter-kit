@@ -10,5 +10,6 @@
 (depends-on "guide-key")
 (depends-on "pallet")
 (depends-on "pkg-info")
+(depends-on "rinari")
 (depends-on "robe")
 (depends-on "s")
