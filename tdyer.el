@@ -389,11 +389,13 @@
 
 ;; Added guide-key to help show all key bindings
 (require 'guide-key)
-(setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-h" "C-x v" "C-+" "C-c f"))
+(setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-h" "C-x v" "C-+" "C-c f" "C-c ' f" " C-c ;" ))
 (guide-key-mode 1)  ; Enable guide-key-mode
 
 ;; Robe mode
 (add-hook 'ruby-mode-hook 'robe-mode)
+(add-hook 'robe-mode-hook 'robe-ac-setup)
 
+(global-set-key "\C-cff" 'ag)
 ;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)
