@@ -3,6 +3,7 @@
 (depends-on "auto-complete")
 (depends-on "cask")
 (depends-on "dash")
+(depends-on "emmet-mode")
 (depends-on "epl")
 (depends-on "expand-region")
 (depends-on "f")

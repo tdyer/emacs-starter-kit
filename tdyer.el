@@ -413,6 +413,10 @@
 ;; (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-o") 'mc/mark-all-like-this)
 
+(require 'emmet-mode)
+(add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
+(add-hook 'html-mode-hook 'emmet-mode)
+(add-hook 'css-mode-hook  'emmet-mode)
 
 ;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)
