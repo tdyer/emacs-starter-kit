@@ -186,8 +186,9 @@
 
 ;; set the color theme to one based on TextMate
 ;; (color-theme-twilight)
-(load-file "~/.emacs.d/tdyer/.emacs-color-theme")
+;;(load-file "~/.emacs.d/tdyer/.emacs-color-theme")
 ;;(color-theme-blackboard)
+(color-theme-zenburn)
 ;;(tgd-black-on-whitecolor)
 
 ;; org-mode
