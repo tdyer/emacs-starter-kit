@@ -188,7 +188,7 @@
 ;; (color-theme-twilight)
 ;;(load-file "~/.emacs.d/tdyer/.emacs-color-theme")
 ;;(color-theme-blackboard)
-(color-theme-zenburn)
+;;(color-theme-zenburn)
 ;;(tgd-black-on-whitecolor)
 
 ;; org-mode
@@ -288,8 +288,10 @@
 (global-set-key "\C-ck" 'dash-at-point)
 (add-hook 'robe-mode-hook
                     (lambda () (setq dash-at-point-docset "rails")))
-(add-hook 'ruby--mode-hook
+(add-hook 'ruby-mode-hook
                     (lambda () (setq dash-at-point-docset "ruby")))
+(add-hook 'js2-mode-hook
+                    (lambda () (setq dash-at-point-docset "d3")))
 
 ;; http://jblevins.org/projects/markdown-mode/
 (autoload 'markdown-mode "markdown-mode"
@@ -402,7 +404,7 @@
 (global-set-key "\C-cff" 'ag)
 
 ;; Turn on CUA selection mode
-(cua-selection-mode  1)
+;;(cua-selection-mode  1)
 
 (require 'yasnippet)
 (yas-global-mode 1)
@@ -418,6 +420,25 @@
 (add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
 (add-hook 'html-mode-hook 'emmet-mode)
 (add-hook 'css-mode-hook  'emmet-mode)
+
+;; http://apple.stackexchange.com/questions/85222/configure-emacs-to-cut-and-copy-text-to-mac-os-x-clipboard
+(defun pbcopy ()
+  (interactive)
+  (call-process-region (point) (mark) "pbcopy")
+  (setq deactivate-mark t))
+
+(defun pbpaste ()
+  (interactive)
+  (call-process-region (point) (if mark-active (mark) (point)) "pbpaste" t t))
+
+(defun pbcut ()
+  (interactive)
+  (pbcopy)
+  (delete-region (region-beginning) (region-end)))
+
+(global-set-key (kbd "C-c c") 'pbcopy)
+(global-set-key (kbd "C-c v") 'pbpaste)
+(global-set-key (kbd "C-c x") 'pbcut)
 
 ;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)
