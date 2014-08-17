@@ -276,6 +276,8 @@
 ;; emacs.js Doesn't work ???
 ;; (load-file "~/.emacs.d/emacs_js_init.el")
 ;; (load-file "~/.emacs.d/emacs_js.el")
+;; http://howardabrams.com/projects/dot-files/emacs-javascript.html
+(load-file "~/.emacs.d/js2-mode-custom.el")
 
 ;;  js2-mode http://code.google.com/p/js2-mode/wiki/InstallationInstructions
 (autoload 'js2-mode "js2" nil t)
