@@ -442,5 +442,8 @@
 (global-set-key (kbd "C-c v") 'pbpaste)
 (global-set-key (kbd "C-c x") 'pbcut)
 
+;; https://d396qusza40orc.cloudfront.net/startup/lecture_slides%2Flecture4b-developer-environment.pdf
+(load "js-config.el")
+
 ;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)
