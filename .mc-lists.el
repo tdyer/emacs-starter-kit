@@ -5,9 +5,13 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        reindent-then-newline-and-indent
         ruby-electric-space
         ))
 
 (setq mc/cmds-to-run-once
       '(
+        cua-delete-region
+        ruby-electric-curlies
+        ruby-indent-line
         ))
