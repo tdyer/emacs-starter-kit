@@ -445,5 +445,13 @@
 ;; https://d396qusza40orc.cloudfront.net/startup/lecture_slides%2Flecture4b-developer-environment.pdf
 (load "js-config.el")
 
+;; Assembly Language with the nasm assembler
+;; See http://0xax.blogspot.com/2014/08/say-hello-to-x64-assembly-part-1.html
+(load "~/.emacs.d/tdyer/nasm.el")
+(require 'nasm-mode)
+(add-to-list 'auto-mode-alist '("\\.\\(asm\\|s\\)$" . nasm-mode))
+(add-hook 'nasm-mode-hook
+          (lambda () (setq-default nasm-basic-offset 2)))
+
 ;; MUST BE THE LAST LINE IN FILE
 (regen-autoloads)
