@@ -6,7 +6,8 @@
 (require 'js-comint)
 (defun whitespace-clean-and-compile ()
   (interactive)
-  (whitespace-cleanup-all)
+  ;;  (whitespace-cleanup-all)
+  (whitespace-cleanup)
   (compile compile-command))
 
 ;; Configure jshint for JS style checking.
@@ -14,12 +15,12 @@
 ;;   - Usage: Hit C-cC-u within any emacs buffer visiting a .js file
 (setq jshint-cli "jshint --show-non-errors ")
   (setq compilation-error-regexp-alist-alist
-	(cons '(jshint-cli "^\\([a-zA-Z\.0-9_/-]+\\): line \\([0-9]+\\), col \\([0-9]+\\)"
-		1 ;; file
-		2 ;; line
-		3 ;; column
-		)
-	      compilation-error-regexp-alist-alist))
+        (cons '(jshint-cli "^\\([a-zA-Z\.0-9_/-]+\\): line \\([0-9]+\\), col \\([0-9]+\\)"
+                1 ;; file
+                2 ;; line
+                3 ;; column
+                )
+              compilation-error-regexp-alist-alist))
 (setq compilation-error-regexp-alist
       (cons 'jshint-cli compilation-error-regexp-alist))
 
