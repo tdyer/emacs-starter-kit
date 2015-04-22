@@ -33,8 +33,8 @@
 ;;                            (height . 60)
                             (width . 120)
                             (height . 30)
-                            (foreground-color . "white")
-                            (background-color . "black")
+;;                            (foreground-color . "white")
+;;                            (background-color . "black")
                             (font . "-apple-monaco-medium-r-normal--14-140-72-72-m-140-iso10646-1")
 ;;                            (font . "-*-*-medium-r-normal--9-*-*-*-*-*-fontset-hiraginokaku")
                             ))
@@ -190,6 +190,7 @@
 ;;(color-theme-blackboard)
 ;;(color-theme-zenburn)
 ;;(tgd-black-on-whitecolor)
+;;(tgd-black-on-white)
 
 ;; org-mode
 ;; http://orgmode.org/worg/org-tutorials/orgtutorial_dto.php
