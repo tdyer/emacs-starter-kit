@@ -4,8 +4,8 @@
 
 ;; Author: Johan Andersson <johan.rejeep@gmail.com>
 ;; Maintainer: Johan Andersson <johan.rejeep@gmail.com>
-;; Version: 20140128.241
-;; X-Original-Version: 0.1.1
+;; Version: 0.1.1
+;; Package-Version: 20140128.241
 ;; Keywords: git
 ;; URL: http://github.com/rejeep/git.el
 ;; Package-Requires: ((s "1.7.0") (dash "2.2.0") (f "0.10.0"))
